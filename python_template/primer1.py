@@ -1,23 +1,25 @@
 #! /usr/bin/python2
 import time
 from copy import copy, deepcopy
+from collections import deque
 
 
 def main():
-    spisek1 = ["miska1", "miska2", "miska3"]
-    spisek2 = spisek1
+     
+    dict1 = {"Tilko":"040463189","Zmaj":"031390446","Sefe":"444"}  #dict()
+
+    for el, key in dict1.items():
+        print(el + " " + key)
+
+
+    d = deque(maxlen=10)
+    d.append("nekej")
+    for o in range(1,35):
+        pass
+
+
     
-    temp = spisek1.pop(1)
-    print(temp)
-
-    spisek1.append(temp)
-
-    print("spisek 1 po append: " + repr(spisek1))
-
-    spisek3 = copy(spisek1)
-    spisek3.pop(1)
-    print(repr(spisek1))
-    print(repr(spisek3))
+     
 
 if __name__ == "__main__":
     main()
